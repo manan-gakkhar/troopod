@@ -1,4 +1,4 @@
-import { useRef, useState } from 'react';
+import React, { useRef, useState } from 'react';
 import { ArrowRight, type LucideIcon } from 'lucide-react';
 
 export interface DirectoryItem {
