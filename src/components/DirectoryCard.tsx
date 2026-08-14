@@ -1,5 +1,5 @@
-import React, { useRef, useState } from 'react';
-import { ArrowRight, LucideIcon } from 'lucide-react';
+import { useRef, useState } from 'react';
+import { ArrowRight, type LucideIcon } from 'lucide-react';
 
 export interface DirectoryItem {
   id: string;
