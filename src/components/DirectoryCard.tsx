@@ -1,4 +1,4 @@
-import React, { useRef, useState } from 'react';
+import { useRef, useState, type MouseEvent } from 'react';
 import { ArrowRight, type LucideIcon } from 'lucide-react';
 
 export interface DirectoryItem {
@@ -19,7 +19,7 @@ export function DirectoryCard({ item }: DirectoryCardProps) {
   const [mousePosition, setMousePosition] = useState({ x: 0, y: 0 });
   const Icon = item.icon;
 
-  const handleMouseMove = (e: React.MouseEvent<HTMLAnchorElement>) => {
+  const handleMouseMove = (e: MouseEvent<HTMLAnchorElement>) => {
     if (cardRef.current) {
       const rect = cardRef.current.getBoundingClientRect();
       const x = e.clientX - rect.left;
